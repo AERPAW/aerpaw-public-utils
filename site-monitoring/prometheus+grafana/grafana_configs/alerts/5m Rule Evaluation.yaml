@@ -1,0 +1,153 @@
+apiVersion: 1
+groups:
+    - orgId: 1
+      name: 5m Rule Evaluation
+      folder: Alerts
+      interval: 5m
+      rules:
+        - uid: ff3ke2j5fx2wwe
+          title: Node Down
+          condition: C
+          data:
+            - refId: A
+              relativeTimeRange:
+                from: 600
+                to: 0
+              datasourceUid: bexiraj6lh1q8d
+              model:
+                disableTextWrap: false
+                editorMode: code
+                expr: up
+                fullMetaSearch: false
+                includeNullMetadata: true
+                instant: true
+                intervalMs: 1000
+                legendFormat: __auto
+                maxDataPoints: 43200
+                range: false
+                refId: A
+                useBackend: false
+            - refId: C
+              datasourceUid: __expr__
+              model:
+                conditions:
+                    - evaluator:
+                        params:
+                            - 1
+                        type: lt
+                      operator:
+                        type: and
+                      query:
+                        params:
+                            - C
+                      reducer:
+                        params: []
+                        type: last
+                      type: query
+                datasource:
+                    type: __expr__
+                    uid: __expr__
+                expression: A
+                intervalMs: 1000
+                maxDataPoints: 43200
+                refId: C
+                type: threshold
+          noDataState: Alerting
+          execErrState: Error
+          for: 5m
+          annotations:
+            summary: '{{ $labels.hostname }} is down. Prometheus is unable to scrape values for the {{ $labels.job }}.'
+          isPaused: false
+          notification_settings:
+            receiver: Monitoring System Admins
+            repeat_interval: 1d
+        - uid: afbnypanbcs1sd
+          title: Temperature Alert
+          condition: outsideOperatingRange
+          data:
+            - refId: temperature
+              relativeTimeRange:
+                from: 600
+                to: 0
+              datasourceUid: bexiraj6lh1q8d
+              model:
+                disableTextWrap: false
+                editorMode: code
+                expr: sht4x_temperature_celsius
+                fullMetaSearch: false
+                includeNullMetadata: true
+                instant: true
+                intervalMs: 1000
+                legendFormat: __auto
+                maxDataPoints: 43200
+                range: false
+                refId: temperature
+                useBackend: false
+            - refId: outsideOperatingRange
+              datasourceUid: __expr__
+              model:
+                conditions:
+                    - evaluator:
+                        params:
+                            - 5
+                            - 35
+                        type: outside_range
+                      operator:
+                        type: and
+                      query:
+                        params: []
+                      reducer:
+                        params: []
+                        type: avg
+                      type: query
+                datasource:
+                    name: Expression
+                    type: __expr__
+                    uid: __expr__
+                expression: temperature
+                intervalMs: 1000
+                maxDataPoints: 43200
+                refId: outsideOperatingRange
+                type: threshold
+          dashboardUid: 0136fc3b-38fd-4ce8-9d1b-c70fcb8c9d13
+          panelId: 1
+          noDataState: KeepLast
+          execErrState: Error
+          for: 30m
+          keepFiringFor: 15m
+          annotations:
+            __dashboardUid__: 0136fc3b-38fd-4ce8-9d1b-c70fcb8c9d13
+            __panelId__: "1"
+            description: 'Expected Operating Range: 5-35°C'
+            summary: '{{ $labels.hostname }} reported temperature is {{ $values.temperature.Value }}°C.'
+          isPaused: false
+          notification_settings:
+            receiver: Temperature Contact Point
+            repeat_interval: 1d
+        - uid: cfnyisc643cw0d
+          title: No Temperature Data
+          condition: noData
+          data:
+            - refId: noData
+              relativeTimeRange:
+                from: 600
+                to: 0
+              datasourceUid: bexiraj6lh1q8d
+              model:
+                editorMode: code
+                expr: "(\r\n  up{job=\"node-exporter\"} == 1\r\n  unless on(hostname)\r\n  sht4x_temperature_celsius\r\n)"
+                instant: true
+                intervalMs: 1000
+                legendFormat: __auto
+                maxDataPoints: 43200
+                range: false
+                refId: noData
+          noDataState: OK
+          execErrState: Error
+          for: 10m
+          annotations:
+            summary: '{{ $labels.hostname }} is up but has no temperature data available.'
+          isPaused: false
+          notification_settings:
+            receiver: Monitoring System Admins
+            repeat_interval: 1d

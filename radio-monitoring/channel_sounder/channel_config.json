@@ -1,0 +1,865 @@
+{
+	"test_groups": [
+	{
+		"group_name": "LW1-5: 3.32GHz",
+		"test_duration": 20,
+		"run_control": "true",
+		"chains": [
+			{
+				"node_name": "LW1",
+				"serial_number": "31EAC18",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW2",
+				"serial_number": "3235751",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW3",
+				"serial_number": "3235754",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW4",
+				"serial_number": "3235724",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW5",
+				"serial_number": "323576B",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+
+			{
+				"node_name": "LW1",
+				"serial_number": "31EAC18",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW2",
+				"serial_number": "3235751",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW3",
+				"serial_number": "3235754",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW4",
+				"serial_number": "3235724",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW5",
+				"serial_number": "323576B",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+
+			{
+				"node_name": "LW1",
+				"serial_number": "31EAC18",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW2",
+				"serial_number": "3235751",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW3",
+				"serial_number": "3235754",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW4",
+				"serial_number": "3235724",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW5",
+				"serial_number": "323576B",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "3.32G"
+			},
+
+			{
+				"node_name": "LW1",
+				"serial_number": "31EAC18",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW2",
+				"serial_number": "3235751",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW3",
+				"serial_number": "3235754",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW4",
+				"serial_number": "3235724",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW5",
+				"serial_number": "323576B",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "3.32G"
+			}
+
+		]
+
+	},
+
+	{
+		"group_name": "LW3-5: 915MHz",
+		"test_duration": 20,
+		"run_control": "true",
+		"chains": [
+			{
+				"node_name": "LW3",
+				"serial_number": "3235754",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "915M"
+			},
+			{
+				"node_name": "LW4",
+				"serial_number": "3235724",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "915M"
+			},
+			{
+				"node_name": "LW5",
+				"serial_number": "323576B",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "915M"
+			},
+
+			{
+				"node_name": "LW3",
+				"serial_number": "3235754",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "915M"
+			},
+			{
+				"node_name": "LW4",
+				"serial_number": "3235724",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "915M"
+			},
+			{
+				"node_name": "LW5",
+				"serial_number": "323576B",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "915M"
+			},
+
+			{
+				"node_name": "LW3",
+				"serial_number": "3235754",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "915M"
+			},
+			{
+				"node_name": "LW4",
+				"serial_number": "3235724",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "915M"
+			},
+			{
+				"node_name": "LW5",
+				"serial_number": "323576B",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "915M"
+			},
+
+			{
+				"node_name": "LW3",
+				"serial_number": "3235754",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "915M"
+			},
+			{
+				"node_name": "LW4",
+				"serial_number": "3235724",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "915M"
+			},
+			{
+				"node_name": "LW5",
+				"serial_number": "323576B",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "915M"
+			}
+
+		]
+
+	},
+
+	{
+		"group_name": "CC1-3: 3.32GHz",
+		"test_duration": 20,
+		"run_control": "true",
+		"chains": [
+			{
+				"node_name": "CC1",
+				"serial_number": "31EABF2",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "CC2",
+				"serial_number": "31EAC20",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "CC3",
+				"serial_number": "31EAC27",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+
+			{
+				"node_name": "CC1",
+				"serial_number": "31EABF2",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "CC2",
+				"serial_number": "31EAC20",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "CC3",
+				"serial_number": "31EAC27",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+
+			{
+				"node_name": "CC1",
+				"serial_number": "31EABF2",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "CC2",
+				"serial_number": "31EAC20",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "CC3",
+				"serial_number": "31EAC27",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "3.32G"
+			},
+
+			{
+				"node_name": "CC1",
+				"serial_number": "31EABF2",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "CC2",
+				"serial_number": "31EAC20",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "CC3",
+				"serial_number": "31EAC27",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "3.32G"
+			}
+
+		]
+
+	},
+
+
+	{
+		"group_name": "LW1 B210 + B205 Self-Test",
+		"test_duration": 15,
+		"run_control": "false",
+		"chains": [
+			{
+				"node_name": "LW1",
+				"serial_number": "31EAC18",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 60
+			},
+			{
+				"node_name": "LW1",
+				"serial_number": "31EAC18",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 30
+			},
+			{
+				"node_name": "LW1",
+				"serial_number": "31EAC18",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "3.32G",
+				"gain": 60
+			},
+			{
+				"node_name": "LW1",
+				"serial_number": "31EAC18",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "3.32G",
+				"gain": 30
+			},
+			{
+				"node_name": "LW1",
+				"serial_number": "319B6EC",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 70
+			},
+			{
+				"node_name": "LW1",
+				"serial_number": "319B6EC",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 30
+			}
+		]
+	},
+
+	{
+		"group_name": "LW2 B210 + B205 Self-Test",
+		"test_duration": 15,
+		"run_control": "false",
+		"chains": [
+			{
+				"node_name": "LW2",
+				"serial_number": "3235751",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 60
+			},
+			{
+				"node_name": "LW2",
+				"serial_number": "3235751",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 30
+			},
+			{
+				"node_name": "LW2",
+				"serial_number": "3235751",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "3.32G",
+				"gain": 60
+			},
+			{
+				"node_name": "LW2",
+				"serial_number": "3235751",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "3.32G",
+				"gain": 30
+			},
+			{
+				"node_name": "LW2",
+				"serial_number": "32332D6",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 70
+			},
+			{
+				"node_name": "LW2",
+				"serial_number": "32332D6",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 30
+			}
+		]
+	},
+
+	{
+		"group_name": "LW3 B210 + B205 Self-Test",
+		"test_duration": 15,
+		"run_control": "false",
+		"chains": [
+			{
+				"node_name": "LW3",
+				"serial_number": "3235754",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 60
+			},
+			{
+				"node_name": "LW3",
+				"serial_number": "3235754",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 30
+			},
+			{
+				"node_name": "LW3",
+				"serial_number": "3235754",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "3.32G",
+				"gain": 60
+			},
+			{
+				"node_name": "LW3",
+				"serial_number": "3235754",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "3.32G",
+				"gain": 30
+			},
+			{
+				"node_name": "LW3",
+				"serial_number": "32332D0",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 70
+			},
+			{
+				"node_name": "LW3",
+				"serial_number": "32332D0",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 30
+			}
+		]
+	},
+
+	{
+		"group_name": "LW4 B210 + B205 Self-Test",
+		"test_duration": 15,
+		"run_control": "false",
+		"chains": [
+			{
+				"node_name": "LW4",
+				"serial_number": "3235724",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 60
+			},
+			{
+				"node_name": "LW4",
+				"serial_number": "3235724",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 30
+			},
+			{
+				"node_name": "LW4",
+				"serial_number": "3235724",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "3.32G",
+				"gain": 60
+			},
+			{
+				"node_name": "LW4",
+				"serial_number": "3235724",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "3.32G",
+				"gain": 30
+			},
+			{
+				"node_name": "LW4",
+				"serial_number": "32332D4",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 70
+			},
+			{
+				"node_name": "LW4",
+				"serial_number": "32332D4",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 30
+			}
+		]
+	},
+
+	{
+		"group_name": "LW5 B210 + B205 Self-Test",
+		"test_duration": 15,
+		"run_control": "false",
+		"chains": [
+			{
+				"node_name": "LW5",
+				"serial_number": "323576B",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 60
+			},
+			{
+				"node_name": "LW5",
+				"serial_number": "323576B",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 30
+			},
+			{
+				"node_name": "LW5",
+				"serial_number": "323576B",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "3.32G",
+				"gain": 60
+			},
+			{
+				"node_name": "LW5",
+				"serial_number": "323576B",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "3.32G",
+				"gain": 30
+			},
+			{
+				"node_name": "LW5",
+				"serial_number": "3233282",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 70
+			},
+			{
+				"node_name": "LW5",
+				"serial_number": "3233282",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 30
+			}
+		]
+	},
+
+	{
+		"group_name": "CC1 B210 + B205 Self-Test",
+		"test_duration": 15,
+		"run_control": "false",
+		"chains": [
+			{
+				"node_name": "CC1",
+				"serial_number": "31EABF2",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 60
+			},
+			{
+				"node_name": "CC1",
+				"serial_number": "31EABF2",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 30
+			},
+			{
+				"node_name": "CC1",
+				"serial_number": "31EABF2",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "3.32G",
+				"gain": 60
+			},
+			{
+				"node_name": "CC1",
+				"serial_number": "31EABF2",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "3.32G",
+				"gain": 30
+			},
+			{
+				"node_name": "CC1",
+				"serial_number": "31E74C2",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 70
+			},
+			{
+				"node_name": "CC1",
+				"serial_number": "31E74C2",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 30
+			}
+		]
+	},
+
+	{
+		"group_name": "CC2 B210 + B205 Self-Test",
+		"test_duration": 15,
+		"run_control": "false",
+		"chains": [
+			{
+				"node_name": "CC2",
+				"serial_number": "31EAC20",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 60
+			},
+			{
+				"node_name": "CC2",
+				"serial_number": "31EAC20",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 30
+			},
+			{
+				"node_name": "CC2",
+				"serial_number": "31EAC20",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "3.32G",
+				"gain": 60
+			},
+			{
+				"node_name": "CC2",
+				"serial_number": "31EAC20",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "3.32G",
+				"gain": 30
+			},
+			{
+				"node_name": "CC2",
+				"serial_number": "319B8F9",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 70
+			},
+			{
+				"node_name": "CC2",
+				"serial_number": "319B8F9",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 30
+			}
+		]
+	},
+
+	{
+		"group_name": "CC3 B210 + B205 Self-Test",
+		"test_duration": 15,
+		"run_control": "false",
+		"chains": [
+			{
+				"node_name": "CC3",
+				"serial_number": "31EAC27",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 60
+			},
+			{
+				"node_name": "CC3",
+				"serial_number": "31EAC27",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 30
+			},
+			{
+				"node_name": "CC3",
+				"serial_number": "31EAC27",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "3.32G",
+				"gain": 60
+			},
+			{
+				"node_name": "CC3",
+				"serial_number": "31EAC27",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "3.32G",
+				"gain": 30
+			},
+			{
+				"node_name": "CC3",
+				"serial_number": "3233241",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 70
+			},
+			{
+				"node_name": "CC3",
+				"serial_number": "3233241",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G",
+				"gain": 30
+			}
+		]
+	},
+
+	{
+		"group_name": "All Nodes B205 RX Only",
+		"test_duration": 15,
+		"run_control": "true",
+		"chains": [
+			{
+				"node_name": "LW1",
+				"serial_number": "319B6EC",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW2",
+				"serial_number": "32332D6",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW3",
+				"serial_number": "32332D0",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW4",
+				"serial_number": "32332D4",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW5",
+				"serial_number": "3233282",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "CC1",
+				"serial_number": "31E74C2",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "CC2",
+				"serial_number": "319B8F9",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "CC3",
+				"serial_number": "3233241",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G"
+			}
+		]
+
+	}
+	]
+
+}

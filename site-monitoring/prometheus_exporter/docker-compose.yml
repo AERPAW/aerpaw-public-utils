@@ -1,0 +1,50 @@
+volumes:
+  textfile_collector:
+
+services:
+  trinkey-reader:
+    image: trinkey-reader
+    container_name: trinkey-reader
+    restart: unless-stopped
+    devices:
+      - /dev/trinkey:/dev/trinkey
+    environment:
+    # tell the script which device to read
+      - DEVICE=/dev/trinkey
+    volumes:
+      - textfile_collector:/var/lib/node_exporter/textfile_collector
+      - /etc/hostname:/etc/hostname:ro
+
+  node-exporter:
+    image: prom/node-exporter:v1.10.2
+    container_name: node-exporter
+    restart: unless-stopped
+    command:
+      - '--path.rootfs=/host'
+      - '--path.procfs=/host/proc'
+      - '--path.sysfs=/host/sys'
+      - '--collector.textfile.directory=/var/lib/node_exporter/textfile_collector'
+    volumes:
+      - '/:/host:ro,rslave'
+      - textfile_collector:/var/lib/node_exporter/textfile_collector
+    network_mode: host
+    pid: host
+
+  dcgm-exporter:
+    image: nvidia/dcgm-exporter:4.5.2-4.8.1-ubuntu22.04
+    container_name: dcgm-exporter
+    network_mode: host
+    restart: unless-stopped
+    cap_add:
+      - SYS_ADMIN
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    command:
+      - "-f"
+      - "/etc/dcgm-exporter/counters.csv"
+    volumes:
+      - ./counters.csv:/etc/dcgm-exporter/counters.csv:ro
+

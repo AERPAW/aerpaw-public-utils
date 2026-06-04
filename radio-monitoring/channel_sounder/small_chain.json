@@ -1,0 +1,42 @@
+{
+	"test_groups": [
+	{
+		"group_name": "LW1 to LW2 3.32GHz",
+		"test_duration": 10,
+		"chains": [
+			{
+				"node_name": "LW1",
+				"serial_number": "31EAC18",
+				"transmission_type": "TX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW1",
+				"serial_number": "31EAC18",
+				"transmission_type": "TX",
+				"channel": "1",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW2",
+				"serial_number": "3235751",
+				"transmission_type": "RX",
+				"channel": "0",
+				"frequency": "3.32G"
+			},
+			{
+				"node_name": "LW2",
+				"serial_number": "3235751",
+				"transmission_type": "RX",
+				"channel": "1",
+				"frequency": "3.32G"
+			}
+		]
+
+	}
+
+
+	]
+
+}

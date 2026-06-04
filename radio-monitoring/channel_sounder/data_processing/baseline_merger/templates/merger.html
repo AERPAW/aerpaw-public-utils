@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseline Merger</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Baseline Merger Editor</h1>
+            <p>Load two baseline CSV files, compare side-by-side, and merge with per-row selection.</p>
+        </header>
+
+        <section id="upload-section" class="panel">
+            <h2>1. Upload Baselines</h2>
+            <form id="upload-form" enctype="multipart/form-data">
+                <div class="file-inputs">
+                    <div class="file-group">
+                        <label>Old Baseline (Keep by default):</label>
+                        <input type="file" name="old_baseline" accept=".csv" required>
+                    </div>
+                    <div class="file-group">
+                        <label>New Baseline (Alternative values):</label>
+                        <input type="file" name="new_baseline" accept=".csv" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Load & Merge</button>
+            </form>
+            <div id="upload-status" class="status hidden"></div>
+        </section>
+
+        <section id="merge-section" class="panel hidden">
+            <h2>2. Review & Edit Merged Data</h2>
+            
+            <div class="controls">
+                <div class="metric-toggle">
+                    <label>View Metrics:</label>
+                    <button id="toggle-power" class="btn btn-toggle active" data-mode="power">Power (Mean/Std)</button>
+                    <button id="toggle-quality" class="btn btn-toggle" data-mode="quality">Quality (Mean/Std)</button>
+                </div>
+                <div class="summary">
+                    <p id="summary-text"></p>
+                </div>
+            </div>
+
+            <div id="grids-container" class="grids">
+                <!-- Dynamically populated grid sections -->
+            </div>
+        </section>
+
+        <section id="export-section" class="panel hidden">
+            <h2>3. Preview & Export</h2>
+            <button id="export-btn" class="btn btn-success">Download Merged Baseline</button>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='merger.js') }}"></script>
+</body>
+</html>

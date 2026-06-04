@@ -1,0 +1,53 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: 
+        - '192.168.62.197:9100'
+        labels:
+          hostname: node-lw1
+      - targets: 
+        - '192.168.58.55:9100'
+        labels:
+          hostname: node-lw2
+      - targets: 
+        - '192.168.62.234:9100'
+        labels:
+          hostname: node-lw3
+      - targets: 
+        - '192.168.63.172:9100'
+        labels:
+          hostname: node-lw4
+      - targets: 
+        - '192.168.57.131:9100'
+        labels:
+          hostname: node-lw5
+      - targets: 
+        - '192.168.63.225:9100'
+        labels:
+          hostname: node-cc1
+      - targets: 
+        - '192.168.59.202:9100'
+        labels:
+          hostname: node-cc2
+      - targets: 
+        - '192.168.62.154:9100'
+        labels:
+          hostname: node-cc3
+
+  - job_name: 'dcgm-exporter'
+    static_configs:
+      - targets: 
+        - '192.168.62.234:9400'
+        labels:
+          hostname: node-lw3
+      - targets: 
+        - '192.168.63.172:9400'
+        labels:
+          hostname: node-lw4
+      - targets: 
+        - '192.168.57.131:9400'
+        labels:
+          hostname: node-lw5

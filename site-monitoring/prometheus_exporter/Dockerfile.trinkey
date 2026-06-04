@@ -1,0 +1,9 @@
+FROM python:3.12-slim
+
+RUN pip install --no-cache-dir pyserial
+
+COPY sht4x_to_prom.py /app/sht4x_to_prom.py
+
+WORKDIR /app
+
+CMD ["python", "-u", "sht4x_to_prom.py"]

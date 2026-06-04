@@ -1,0 +1,16 @@
+{
+	"node_name": [
+		{
+			"serial_number": "if applicable",
+			"frequency": "3.32G",
+			"channel": 0,
+			"time": 10
+		},
+		{
+			"serial_number": "if applicable",
+			"frequency": "3.39G",
+			"channel": 1,
+			"time": 10
+		}
+	]
+}
